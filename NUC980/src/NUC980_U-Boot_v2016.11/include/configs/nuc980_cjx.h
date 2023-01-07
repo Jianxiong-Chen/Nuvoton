@@ -229,7 +229,7 @@
 #define CONFIG_BOOTCOMMAND \
 	"nand read 0x7fc0 0x200000 0xA00000; " \
 	"nand read 0x1400000 0xB00000 0x80000; " \
-	"bootm  0x7fc0 - 0x1400000"
+	"bootz  0x7fc0 - 0x1400000"
 
 
 #define CONFIG_BOOTARGS \  
