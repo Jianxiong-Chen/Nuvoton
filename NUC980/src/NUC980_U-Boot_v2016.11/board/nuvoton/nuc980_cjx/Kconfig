@@ -1,0 +1,18 @@
+if (TARGET_CJX_NUC980 ||TARGET_NUC980 || TARGET_NUC980_TOMATO || TARGET_NUC980_ETH2UART || TARGET_NUC980_IOT || TARGET_NUC980_CHILI || TARGET_NUC980_LORAG)
+
+config SYS_BOARD
+	default "nuc980_cjx"
+
+config SYS_VENDOR
+	default "nuvoton"
+
+config SYS_SOC
+	default "nuc980"
+
+config SYS_CONFIG_NAME
+	default "nuc980_cjx" if TARGET_CJX_NUC980
+	
+config NUC980
+	bool
+	default y
+endif
