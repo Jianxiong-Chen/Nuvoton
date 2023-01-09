@@ -67,7 +67,7 @@
 		};
 
 		rtc: rtc@b0041000 {
-			status = "disabled";
+			status = "okay";
 		};
 
 		nadc: nadc@b0043000 {

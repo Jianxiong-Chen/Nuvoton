@@ -222,10 +222,10 @@
 			status = "okay";
 			// status = "disabled";
 			// pinctrl-0 = <&pinctrl_i2c2_PB>;
-			cap0_nt99141@2a {
-                                compatible = "nuvoton,cap0-nt99141";
-                                reg = <0x2a>;
-                        };
+			// cap0_nt99141@2a {
+            //                     compatible = "nuvoton,cap0-nt99141";
+            //                     reg = <0x2a>;
+            //             };
 			pcf8563: pcf8563@51 {
 				compatible = "nxp,pcf8563";
 				reg = <0x51>;
@@ -395,6 +395,17 @@
 		};
 		ebi: ebi@b0010000 {
 			status = "disabled";
+		};
+
+		// wirel{
+		// 	i2s-controller = <&i2s>;
+		// 	i2s-platform = <&i2s_pcm>;
+		// 	status = "disabled";
+		// };
+		onewire@0 {
+			compatible = "w1-gpio";
+			gpios = <&gpio 102 0>;//PD6
+			status = "okay";
 		};
 	};
 };
